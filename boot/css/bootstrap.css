@@ -960,6 +960,27 @@ position: relative;
 }
 
 
+/*토너먼트--------------------------------------------------------------------------------------*/
+
+
+.tournament-bar {
+  width: 35rem;
+  height: 6rem;
+  border-radius: 20px;
+  border : 1px solid #FFFFFF;
+}
+
+.tournament-image {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Image1 {
+  border-radius: 20px;
+  width: 35rem; height: 35rem;
+}
+
 
 
 /*# sourceMappingURL=bootstrap.css.map */
