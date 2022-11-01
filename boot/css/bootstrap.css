@@ -108,6 +108,7 @@
 /*Main-----------------------------------------------------------------------------------------------------------------*/
 html, body {
   height: 100%;
+  font-size: 10px;
 }
 
 
@@ -127,7 +128,7 @@ nav {
   position: absolute;
   top:0;
   right: 0;
-  padding: 20px;
+  padding: 2rem;
 }
 
 body {
@@ -163,7 +164,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 .navbar-logo {
   position: relative;
-  margin-left: 30px;
+  margin-left: 3rem;
 }
 
 .navbar-default {
@@ -171,73 +172,76 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h3, .h3 {
-  font-size: 51px;
+  font-size: 5.1rem;
   font-family: 'Pretendard-SemiBold';
   text-align: center;
-  color: #8B8B8B;  
+  color: #8B8B8B;
   
 }
 @media (max-width: 1920px) {
   h3, .h3 {
-    font-size: 51px;
+    font-size: 5.1rem;
     font-family: 'Pretendard-SemiBold';
     color: #8B8B8B;
     text-align: center;
   }
 }
-@media (max-width:960px){
+@media (max-width:1200px){
   h3, .h3 {
-    font-size: 29px;
+    font-size: 4rem;
+    
   }
 }
 
 h4, .h4 {
   
-  font-size: 58px;
+  font-size: 5.8rem;
   font-family: 'Pretendard-SemiBold';
   text-align: center;
+
 }
 @media (max-width: 1920px) {
   h4, .h4, .jb-text {
-    font-size: 58px;
+    font-size: 5.8rem;
   }
 }
-@media (max-width: 960px){
-  h4, .h4, .jb-text {
-    font-size: 29px;
+
+@media (max-width: 1200px) {
+  .h4, h4, .jb-text h4{
+    font-size: 4.1rem;
   }
 }
+
 
 .h5, h5 {
   font-family: 'Pretendard-Medium';
-  font-size: 31px;
+  font-size: 3.1rem;
 }
 
 .btn-gamestart{
-  width: 280px;
-  height: 85px;
+  width: 28rem;
+  height: 8.5rem;
   text-align: center;
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 1.5rem  3rem;
   border :0;
   outline: none;
   cursor: pointer;
   border-radius: 30px;
   background-color: #48C6C6;
-  font-size: 23px;
+  font-size: 2.3rem;
   color:white;
-  font-size: 23px;
   opacity: 1;
   background: #48C6C6 0% 0% no-repeat padding-box;
   
   margin:auto;
   display: block;
   font-family: "Pretendard-Medium";
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -247,16 +251,16 @@ h4, .h4 {
   outline: none;
   cursor: pointer;
   border-radius: 30px;
-  width: 240px;
-  height: 60px;
+  width: 24rem;
+  height: 6rem;
   display: block;
   align-items: center;
   margin: 0 auto;
 }
 
 .btn-playimage {
-  width: 240px;
-  height: 70px;
+  width: 24rem;
+  height: 7rem;
 }
 
 
@@ -268,13 +272,13 @@ h4, .h4 {
 
 
 .contents-area1 {
-  width: 900px;
-  height: 600px;
+  width: 90rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 500px;
+  padding-bottom: 50rem;
   margin: auto;
 }
 
@@ -282,16 +286,16 @@ h4, .h4 {
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 150px;
+  padding-bottom: 15rem;
 }
 
 .contents-item {
-  width: 900px;
+  width: 90rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-right: 400px; 
-  margin-left: 400px;
+  margin-right: 40rem; 
+  margin-left: 40rem;
   align-items: center;
 }
 
@@ -303,19 +307,19 @@ h4, .h4 {
 }
 
 .box-image {
-  margin-bottom: 90px;
+  margin-bottom: 9rem;
 }
 
 
 
 .contents-area2 {
-  width: 100%;
-  height: 1400px;
+  width: 140rem;
+  height: 140rem;
   display: flex;
   flex-direction: column;
   position: relative;
   margin: auto;
-  padding-bottom: 500px;
+  padding-bottom: 50rem;
 }
 
 .character-box {
@@ -324,8 +328,8 @@ h4, .h4 {
   width: 100%;
   margin: 0 auto;
   flex-direction: column;
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .contents-area {
@@ -338,7 +342,7 @@ h4, .h4 {
 .container {
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 500px;
+  padding-bottom: 50rem;
 }
 
 .character-area {
@@ -347,7 +351,7 @@ h4, .h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 
 .h7, h7 {
@@ -355,29 +359,29 @@ h4, .h4 {
   color: #48C6C6;
   border: 2px solid #48C6C6;
   border-radius: 20px;
-  padding : 5px 20px;
+  padding : 0.5rem 2rem;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .charac-imagebox {
-  width: 273px;
-  height: 273px;
+  width: 27.3rem;
+  height: 27.3rem;
 }
 
 .charac-detail {
-  width: 273px;
+  width: 27.3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 
 .character-area2 ul {
-  width: 1400px;
-  height: 350px;
+  width: 140rem;
+  height: 35rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -389,18 +393,18 @@ h4, .h4 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 500px;
+  padding-bottom: 50rem;
 }
 
 .character-edit {
   display: flex;
   justify-content: center;
-  padding-bottom: 80px;
+  padding-bottom: 8rem;
 }
 
 .edit-imagebox {
-  width: 230px;
-  height: 230px;
+  width: 23rem;
+  height: 23rem;
   align-items: center;
   justify-content: center;
   display: block;
@@ -408,20 +412,20 @@ h4, .h4 {
 }
 
 .edit-imagebox-result {
-  width: 310px;
-  height: 310px;
+  width: 31rem;
+  height: 31rem;
   align-items: center;
   justify-content: center;
 }
 
 .edit-icon {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   justify-content: center;
   align-items: center;
   margin: auto 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 
@@ -605,9 +609,9 @@ label {
 
 .btn-login {
   border-radius: 0;
-  width: 178;
-  height: 49px;
-  font: size 19px;
+  width: 17.8rem;
+  height: 4.9rem;
+  font-size: 1.3rem;
   font-family: 'Pretendard-SemiBold';
   text-align: center;
   background: #F4F4F4;
@@ -616,14 +620,13 @@ label {
   outline:0;
   float: right;
   
-  padding: 15px 40px;
-  margin: top 42px;
-  margin-right: 30px;
-  margin-top: 42px;
+  padding: 1.5rem 4rem;
+  margin-right: 3rem;
+  margin-top: 4.2rem;
   display: block;
 
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .btn-login:hover{
@@ -637,7 +640,7 @@ label {
 
 footer{
   width: 100%;
-  height: 422px;
+  height: 42.2rem;
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
@@ -648,7 +651,7 @@ footer{
   background-color:#e3dbdb ;
   margin: 0%;
   padding-bottom: 0%;
-  height: 211px;
+  height: 21.1rem;
 }
 
 .f-menu {
@@ -657,10 +660,10 @@ footer{
 }
 
 .f-menu li {
-  padding-top: 111px;
+  padding-top: 11.1rem;
   float: left;
   font-family: 'Pretendard-Medium';
-  font-size: 19px;
+  font-size: 1.9rem;
   text-align: center;
   color: #FFFFFF;
   margin: auto;
@@ -668,8 +671,8 @@ footer{
   color: inherit;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .f-menu a {
@@ -681,7 +684,7 @@ footer{
   color: #FFFFFF;
   font-family: 'Pretendard-Medium';
   text-align: center;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 100;
   justify-content: center;
 }
@@ -738,7 +741,7 @@ button:focus:not(:focus-visible) {
 
 .mypage-topbanner {
   width: 100%;
-  height: 240px;
+  height: 24rem;
   background-color: #EFF1F4;
 }
 
@@ -750,15 +753,15 @@ button:focus:not(:focus-visible) {
 }
 
 .profil-box {
-  width: 280px;
+  width: 28rem;
   height: 100%;
   border: 0px;
   border-radius: 50px;
   background-color: #FFFFFF; /*#FFFFFF*/
-  margin-left: 110px;
-  margin-right: 40px;
-  margin-top: 30px;
-  padding-bottom: 30px;
+  margin-left: 11rem;
+  margin-right: 4rem;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
 
   
@@ -774,39 +777,39 @@ button:focus:not(:focus-visible) {
    
   background-color: #30AA90;
   border-radius: 100px;
-  width: 62px;
-  height: 62px;
+  width: 6.2rem;
+  height: 6.2rem;
   background-color: #F4F4F4;
   border-radius: 100px;
 
 
 
-  margin: 96px auto;
-  margin-bottom: 60px;
+  margin: 9.6rem auto;
+  margin-bottom: 6rem;
 }
 
 .edit-profil {
-  width: 211px;
-  height: 63px;
+  width: 21.1rem;
+  height: 6.3rem;
   border: 0px;
   border-radius: 85px;
   font-family: 'Pretendard-SemiBold';
-  font-size: 19px;
+  font-size: 1.9rem;
   background-color: #F4F4F4;
-  margin-bottom: 26px;
-  margin-left: 36px;
-  margin-right: 36px;
+  margin-bottom: 2.6rem;
+  margin-left: 3.6rem;
+  margin-right: 3.6rem;
 }
 
 .create-charge {
-  width: 211px;
-  height: 63px;
+  width: 21.1rem;
+  height: 6.3rem;
   border-radius: 85px;
   font-family:'Pretendard-SemiBold';
-  font-size: 19px;
+  font-size: 1.9rem;
   background-color: #FFFFFF;
-  margin-left: 36px;
-  margin-right: 36px;
+  margin-left: 3.6rem;
+  margin-right: 3.6rem;
   
   border: 1px ;
   border-color: #707070;
@@ -814,32 +817,32 @@ button:focus:not(:focus-visible) {
 }
 
 .charac-container {
-  width: 1380px;
+  width: 138rem;
   height: 100%;
   border: 0px;
   border-radius: 50px;
   background-color: #FFFFFF; /*#FFFFFF*/
-  margin-right: 110px;
-  margin-top: 30px;
+  margin-right: 11rem;
+  margin-top: 3rem;
   
   align-items: stretch;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .buttons { 
   display: flex;
-  margin-top: 47px;
-  margin-bottom: 54px;
+  margin-top: 4.7rem;
+  margin-bottom: 5.4rem;
 }
 
 .b-charac, .r-charac {
-  width: 265px;
-  height: 57px;
+  width: 26.5rem;
+  height: 5.7rem;
   border-radius: 85px;
   font-family: 'Pretendard-Medium';
-  font-size: 17px;
+  font-size: 1.7rem;
   color: #707070;
-  margin-left: 57px;
+  margin-left: 5.7rem;
 
   border-style: solid;
   border-color: #707070;
@@ -853,8 +856,8 @@ button:focus:not(:focus-visible) {
 }
 
 .r-charac {
-  margin-left: 20px;
-  margin-right: 57px;
+  margin-left: 2rem;
+  margin-right: 5.7rem;
 }
 
 .r-charac:hover {
@@ -863,15 +866,15 @@ button:focus:not(:focus-visible) {
 }
 
 .registbox {
-position: relative;
+  position: relative;
   
-  width: 290px;
-  height: 348px;
+  width: 29rem;
+  height: 34.8rem;
   border-radius: 20px;
   display: flex;
   background-color: #F5F5F5;
   flex-direction: column;
-  margin-bottom: 38px;
+  margin-bottom: 3.8rem;
 }
 
 .c-detailbox {
@@ -881,8 +884,8 @@ position: relative;
 
   background-color: #000;
   align-content: flex-end;
-  height: 94px;
-  width: 290px;
+  height: 9.4rem;
+  width: 29rem;
 
   border-radius: 0 0 20px 20px;
   color: #FFFFFF;
@@ -892,39 +895,39 @@ position: relative;
 }
 
 .charac-name {
-  font-size: 25px;
-  padding-top: 13px;
-  padding-left: 15px;
+  font-size: 2.5rem;
+  padding-top: 1.3rem;
+  padding-left: 1.5rem;
 }
 
 .charac-detail {
-  font-size: 10px;
+  font-size: 1rem;
   justify-content: flex-start;
-  margin-right: 15px;
-  margin-top: 15px;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .hits {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .good{
-  padding-right: 15px;
+  padding-right: 1.5rem;
 }
 
 .my-regist {
-  width: 230px;
-  height: 50px;
+  width: 23rem;
+  height: 5rem;
   border: 1px #707070;
   border-radius: 85px;
   font-family: 'Pretendard-Medium';
   background-color: #FFFFFF;
-  font-size: 14px;
-  margin-bottom: 45px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 38px;
+  font-size: 1.4rem;
+  margin-bottom: 4.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3.8rem;
 
   border-width: 1px;
   border-color: #707070;
@@ -934,8 +937,8 @@ position: relative;
 }
 
 .mycharac-area {
-  padding-left: 57px;
-  padding-right: 57px;
+  padding-left: 5.7rem;
+  padding-right: 5.7rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -951,9 +954,9 @@ position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width:130px;
-  height:130px;
-  margin-top: 70px; 
+  width:13rem;
+  height:13rem;
+  margin-top: 7rem; 
   margin:auto; 
   background-color: #30AA90;
   border-radius: 100px;
@@ -964,13 +967,15 @@ position: relative;
 
 
 .tournament-bar {
-  width: 35rem;
-  height: 6rem;
+  width: 70rem;
+  height: 70rem;
   border-radius: 20px;
   border : 1px solid #FFFFFF;
 }
 
 .tournament-image {
+
+
   display: flex;
   flex-direction: row;
 
@@ -978,7 +983,8 @@ position: relative;
 
 .Image1 {
   border-radius: 20px;
-  width: 35rem; height: 35rem;
+  width: 10rem; 
+  height: 10rem;
 }
 
 
