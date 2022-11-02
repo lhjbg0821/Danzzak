@@ -988,5 +988,52 @@ button:focus:not(:focus-visible) {
 }
 
 
+/*---------------------------------------------------------------------------------------------*/
+
+.m-charge-top {
+  height: 21rem;
+  background-color: #FFFFFF;
+}
+
+h5, .h5 {
+  font-size: 2rem;
+  font-family: "Pretendard-SemiBold";
+  text-align: center;
+}
+
+h6, .h6 {
+  font-size: 1.4rem;
+  font-family: "Pretendard-SemiBold";
+  text-align: center;
+}
+
+.m-charge-main {
+  width: 38.2rem;
+  height: 26.3rem;
+  
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  background-color: #FFFFFF48;
+
+  padding-top: 3rem;
+}
+
+.m-charge-btn {
+  width: 17.5rem;
+  height: 6rem;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 48px;
+
+  text-align: center;
+  align-items: center;
+  background-color: #48C6C6;
+  
+  margin-top: 2.8rem;
+}
+
+
+
+
 
 /*# sourceMappingURL=bootstrap.css.map */
