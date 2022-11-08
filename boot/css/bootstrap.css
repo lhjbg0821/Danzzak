@@ -802,6 +802,7 @@ button:focus:not(:focus-visible) {
 }
 
 .create-charge {
+  all: unset;
   width: 21.1rem;
   height: 6.3rem;
   border-radius: 85px;
@@ -814,6 +815,7 @@ button:focus:not(:focus-visible) {
   border: 1px ;
   border-color: #707070;
   border-style: solid;
+  cursor: pointer;
 }
 
 .charac-container {
@@ -983,16 +985,62 @@ button:focus:not(:focus-visible) {
 
 .Image1 {
   border-radius: 20px;
-  width: 10rem; 
-  height: 10rem;
+  width: 70rem; 
+  height: 70rem;
+}
+
+.Image2 {
+  border-radius: 20px;
+  width: 70rem;
+  height: 70rem;
 }
 
 
 /*---------------------------------------------------------------------------------------------*/
 
+
+
+
+
+.modal-charge {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: absolute;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  
+}
+
+
+
+
 .m-charge-top {
+  width: 45rem;
   height: 21rem;
   background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+.m-charge-top-image {
+  width: 10rem;
+  height: 9.1rem;
+  justify-content: center;
 }
 
 h5, .h5 {
@@ -1010,12 +1058,14 @@ h6, .h6 {
 .m-charge-main {
   width: 38.2rem;
   height: 26.3rem;
-  
+  margin: 0 30px;
   border: 1px solid #FFFFFF;
   border-radius: 20px;
-  background-color: #FFFFFF48;
-
   padding-top: 3rem;
+  background-color: #FFFFFF48;
+}
+
+.m-charge-box{
 }
 
 .m-charge-btn {
@@ -1028,10 +1078,24 @@ h6, .h6 {
   text-align: center;
   align-items: center;
   background-color: #48C6C6;
-  
+  margin-bottom: 2.8rem;
   margin-top: 2.8rem;
 }
 
+.m-charge-detail {
+  font-style: "Pretendard-SemiBold";
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.mc-image {
+  padding-left: 4.8rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 2rem;
+}
 
 
 
