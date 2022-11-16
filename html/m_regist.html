@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐릭터 등록하기</title>
+    <link href="../boot/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            font-size: 10px;
+            width: 51rem;
+            height: 100%;
+        }
+
+        h5 {
+            font-size: 2rem;
+            font-style: "Pretendard-SemiBold";
+        }
+
+       
+
+        h8 {
+            font-style: "Pretendard-SemiBold";
+            font-size: 1.9rem;
+            color: #FFFFFFB7;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="m-regist-header">
+                <h5>캐릭터 등록하기</h5>
+            </div>
+            <div class="m-regist-main">
+                <h6>하단의 규격에 맞춰 캐릭터 파일을 업로드하면<br>
+                    캐릭터 등록이 완료됩니다.
+                </h6>
+                <div class="m-regist-upload">
+                    <img src="../image/업로드.png" style="width:12rem; height:12rem;">
+                    <div class="m-regist-upload-txt">파일 등록하기</div>
+                    
+                </div>
+                <div class="m-regist-detail">
+                    <h8>캐릭터 이름</h8>
+                    <hr>
+                    <h8>캐릭터에 대해 설명해 주세요</h8>
+                </div>
+                <div class="m-regist-btn">
+                    <button class="btn-download" id="btn-download">캐릭터 파일 양식 다운로드</button>
+                    <button class="btn-regist" id="btn-regist">캐릭터 등록하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
