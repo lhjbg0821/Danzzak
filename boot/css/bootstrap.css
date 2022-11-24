@@ -1078,12 +1078,67 @@ button:focus:not(:focus-visible) {
   border-radius: 20px 20px 0px 0px;
 }
 
-.m-charge-top-image {
-  width: 10rem;
-  height: 9.1rem;
-  justify-content: center;
-  padding: 2.5rem 0rem;
+.m-charge-header {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 3.5rem;
+  padding-bottom: 2.7rem;
+  margin-bottom: 3.1rem;
 }
+
+.m-charge-header > img { 
+  width: 10.066rem;
+  margin-bottom: 2.7rem;
+}
+
+.m-charge-header > h5 {
+  font-style: "Pretendard-SemiBold";
+  font-size: 2rem;
+}
+
+.m-charge-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFFFFF;
+
+
+  width: 38.2rem;
+  height: 100%;
+  margin: 0 30px;
+  border-radius: 20px;
+  padding-top: 3rem;
+  background-color: #FFFFFF48;
+}
+
+.m-charge-main > hr {
+  color: #FFFFFF;
+}
+
+.m-charge-main > h5 {
+  font-style: "Pretendard-SemiBold";
+  font-size: 1.4rem;
+}
+
+.m-charge-main-detail {
+  font-style: "Pretendard-SemiBold";
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  
+  justify-content: flex-start;
+  margin-right: auto;
+  padding-left: 4.8rem;
+  padding-bottom: 2.5rem;
+}
+
+.m-charge-detail > img {
+  width: 5.5rem;
+  padding-bottom: 3rem;
+}
+
+
 
 h5, .h5 {
   font-size: 2rem;
@@ -1097,19 +1152,9 @@ h6, .h6 {
   text-align: center;
 }
 
-.m-charge-main {
-  width: 38.2rem;
-  height: 100%;
-  margin: 0 30px;
-  border: 1px solid #FFFFFF;
-  border-radius: 20px;
-  padding-top: 3rem;
-  background-color: #FFFFFF48;
-}
 
-.m-charge-box{
-  padding-bottom: 0.5rem;
-}
+
+
 
 .m-charge-btn {
   width: 17.5rem;
@@ -1124,28 +1169,6 @@ h6, .h6 {
   background-color: #48C6C6;
   margin-bottom: 2.8rem;
   margin-top: 2.8rem;
-}
-
-.m-charge-detail {
-  font-style: "Pretendard-SemiBold";
-  font-size: 1.7rem;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
-}
-
-.m-charge-detail1, .m-charge-detail2 {
-  font-style: "Pretendard-SemiBold";
-  font-weight: 1000;
-  font-size: 1.4rem;
-  margin-right: auto;
-}
-
-.mc-image {
-  padding-left: 4.8rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-right: 2rem;
 }
 
 
