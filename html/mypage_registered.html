@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyPage-내가 등록한 캐릭터</title>
     <link href="../boot/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
     <style>
@@ -35,6 +35,34 @@
         }
 
         .modal_content {
+            background-color: #DEDEDE;
+            text-align: center;
+            position: relative;
+            border-radius: 20px;
+            width: 45rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        .modal2 {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal_overlay2 {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .modal_content2 {
             background-color: #DEDEDE;
             text-align: center;
             position: relative;
@@ -212,9 +240,41 @@
         </div>
     </div>
 
+    <div class="modal2 hidden">
+        <div class="modal-overlay2"></div>
+        <div class="modal-content2">
+            <div class="m-regist-header">
+                <h5>캐릭터 등록하기</h5>
+            </div>
+            <div class="m-regist-main">
+                <h6>하단의 규격에 맞춰 캐릭터 파일을 업로드하면<br>
+                    캐릭터 등록이 완료됩니다.
+                </h6>
+                <div class="m-regist-upload">
+                    <img src="../image/업로드.png" style="width:12rem; height:12rem;">
+                    <div class="m-regist-upload-txt">파일 등록하기</div>
+                    
+                </div>
+                <div class="m-regist-detail">
+
+                    <h8>캐릭터 이름</h8>
+                    <hr>
+                    <h8>캐릭터에 대해 설명해 주세요</h8>
+                </div>
+                <div class="m-regist-btn">
+                    <button class="btn-download" id="btn-download">캐릭터 파일 양식 다운로드</button>
+                    <button class="btn-regist" id="btn-regist">캐릭터 등록하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
 
     <script>
-        const openButton = document.getElementById("create-charge");
+        const opencharge = document.getElementById("create-charge");
         const modal = document.querySelector(".modal");
         const overlay = modal.querySelector(".modal_overlay");
         const closeBtn = modal.querySelector("button");
@@ -226,7 +286,23 @@
         }
         overlay.addEventListener("click", closeModal);
         closeBtn.addEventListener("click", closeModal);
-        openButton.addEventListener("click", openModal);
+        opencharge.addEventListener("click", openModal);
+    </script>
+
+    <script>
+        const openregist = document.getElementById("my-regist");
+        const modal2 = document.querySelector(".modal2");
+        const overlay2 = modal.querySelector(".modal_overlay2");
+        const closeBtn2 = modal.querySelector("btn-regist");
+        const openModal2 = () => {
+            modal2.classList.remove("hidden");
+        }
+        const closeModal2 = () => {
+            modal2.classList.add("hidden");
+        }
+        overlay2.addEventListener("click", closeModal2);
+        closeBtn2.addEventListener("click", closeModal2);
+        openregist.addEventListener("click", openModal2);
     </script>
 
 
