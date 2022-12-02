@@ -16,15 +16,18 @@
         
 
         .modal {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: none;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+
+                overflow: auto;
         }
 
         .modal_overlay {
@@ -43,34 +46,7 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         }
 
-        .modal2 {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal_overlay2 {
-            background-color: rgba(0, 0, 0, 0.6);
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-
-        .modal_content2 {
-            background-color: #DEDEDE;
-            text-align: center;
-            position: relative;
-            border-radius: 20px;
-            width: 45rem;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        }
-
+    
         
 
         .hidden {
@@ -99,9 +75,9 @@
                     <div class="profil-image">
                         <img src="../image/mypage_profile.png" style="width:35px ;height:35px">  <!--프로필 이미지 변경-->
                     </div>
-                    <div>
+                    <div class="profil-btn">
                         <button class="edit-profil" type="button" id="edit-profil">프로필 편집하기</button>
-                        <button class="create-charge" type="button" id="create-charge" >정산하기</button>
+                        <button class="btn" >정산하기</button>
                     </div>
                 </div>
 
@@ -115,7 +91,7 @@
                     <div class="mycharac-area">
                         <div class="registbox">
                             <img src="../image/캐릭터추가.png" style="width:130px ;height:130px; margin-top: 70px; margin:auto;" >
-                            <button class="my-regist" type="button" id="my-regist">내 캐릭터 등록하기</button>
+                            <button class="btn" type="button" id="my-regist">내 캐릭터 등록하기</button>
     
                         </div>
                         <div class="registbox">
@@ -236,13 +212,16 @@
                     <h6>penidanzzak@gmail.com</h6>
                 </div>
             </div>
-            <button class="m-charge-btn" id="m-charge-btn">확인</button>
+            <div class="m-charge-footer">
+                <button class="close" id="m-charge-btn">확인&times;</button>
+            </div>
         </div>
     </div>
 
-    <div class="modal2 hidden">
-        <div class="modal-overlay2"></div>
-        <div class="modal-content2">
+
+    <div class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
             <div class="m-regist-header">
                 <h5>캐릭터 등록하기</h5>
             </div>
@@ -269,11 +248,12 @@
         </div>
     </div>
 
+    
 
     
 
 
-    <script>
+    <!--<script>
         const opencharge = document.getElementById("create-charge");
         const modal = document.querySelector(".modal");
         const overlay = modal.querySelector(".modal_overlay");
@@ -287,23 +267,11 @@
         overlay.addEventListener("click", closeModal);
         closeBtn.addEventListener("click", closeModal);
         opencharge.addEventListener("click", openModal);
-    </script>
+    </script>-->
 
-    <script>
-        const openregist = document.getElementById("my-regist");
-        const modal2 = document.querySelector(".modal2");
-        const overlay2 = modal.querySelector(".modal_overlay2");
-        const closeBtn2 = modal.querySelector("btn-regist");
-        const openModal2 = () => {
-            modal2.classList.remove("hidden");
-        }
-        const closeModal2 = () => {
-            modal2.classList.add("hidden");
-        }
-        overlay2.addEventListener("click", closeModal2);
-        closeBtn2.addEventListener("click", closeModal2);
-        openregist.addEventListener("click", openModal2);
-    </script>
+    <script src="../js/modal.js"></script>
+
+
 
 
     

@@ -5,53 +5,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MyPage-내가 구매한 캐릭터</title>
-        <link href="../boot/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-
-
-        <style>
-            html, body {
-                width: 100%;
-                height: 100%;
-                background-color: #DEDEDE;
-            }
-
-            .modal {
-                display: none;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                justify-content: center;
-                align-items: center;
-
-                overflow: auto;
-            }
-
-            .modal_overlay {
-                background-color: rgba(0, 0, 0, 0.6);
-                width: 100%;
-                height: 100%;
-                position: absolute;
-            }
-
-            .modal_content {
-                background-color: #DEDEDE;
-                text-align: center;
-                position: relative;
-                border-radius: 20px;
-                width: 45rem;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-            }
-
+        <title>Modal test</title>
+        <link rel="stylesheet" href="../boot/css/bootstrap.css"/>
+            
+            
         
-        </style>
     </head>
-
     <body>
+
         <header>
             <nav class="navbar-logo">
                 <img src="../image/logo.png">
@@ -184,82 +145,40 @@
 
         </section>
 
+      <!--첫번째 Modal 오픈-->
+      <h1 class="btn">MODAL_1</h1>
 
-        <div class="modal">
-            <div class="modal_overlay"></div>
-            <div class="modal_content">
-                <div class="m-charge-header">
-                    <img src="../image/error.png">
-                    <h5>지금은 서비스 준비 중입니다</h5>
-                </div>
-                <div class="m-charge-main">
-                    <h5>정산은 월 말 일괄적으로 진행됩니다<br>
-                        문의사항은 하단을 통해 문의해 주시기 바랍니다
-                    </h5>
-                    <hr width=90% color="white";>
-                    <div class="m-charge-main-detail">
-                        <img src="../image/원.png">
-                        <h6>02-1234-5678</h6>
-                    </div>
-                    <div class="m-charge-main-detail">
-                        <img src="../image/원.png">
-                        <h6>penidanzzak@gmail.com</h6>
-                    </div>
-                </div>
-                <div class="m-charge-footer">
-                    <button class="close" id="m-charge-btn">확인&times;</button>
-                </div>
-                
-            </div>
+      <!--1Modal-->
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>첫 번째 Modal</p>
         </div>
+      </div>
 
+      <hr>
 
-        <div class="modal">
-            <div class="modal-overlay"></div>
-            <div class="modal-content">
-                <div class="m-tm-header">
-                    <img src="../image/error.png">
-                    <h5>캐릭터 토너먼트 설명</h5>
-                </div>
-                <div class="m-tm-main">
-                    <h8>원하는 캐릭터를 선택하세요<br>
-                        마지막에 남은 두 개의 캐릭터를 합성해 드립니다
-                    </h8>
-                    <hr style="color:white; margin-top:1.9rem;">
-                    <div class="detail">
-                        <img src="../image/원.png">
-                        <img src="../image/원.png">
-                    </div>
-                </div>
-                <!--<div class="m-tm-footer">
-                    <span class="close" id="m-tm-btn">확인&times;</span>
-                </div>-->
-                <span class="close" id="m-tm-btn">확인&times;</span>
-                
-    
-            </div>
+      <h1 class="btn">MODAL_2</h1>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>두 번째 Modal</p>
         </div>
-    
-    
-        <!--<script>
-            const opencharge = document.getElementById("create-charge");
-            const modal = document.querySelector(".modal");
-            const overlay = modal.querySelector(".modal_overlay");
-            const closeBtn = modal.querySelector("button");
-            const openModal = () => {
-                modal.classList.remove("hidden");
-            }
-            const closeModal = () => {
-                modal.classList.add("hidden")
-            }
-            overlay.addEventListener("click", closeModal);
-            closeBtn.addEventListener("click", closeModal);
-            opencharge.addEventListener("click", openModal);
-        </script>-->
+      </div>
 
-        <script src = "../js/modal.js">
-            
-        </script>
+      <hr>
+
+      <h1 class="btn">MODAL_3</h1>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>세 번째 Modal</p>
+        </div>
+      </div>
+      
+      <script src = ../js/testmodal.js>
+      /*modal.js*/
+      </script>   
 
     </body>
 </html>
