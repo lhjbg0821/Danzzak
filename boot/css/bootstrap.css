@@ -820,7 +820,7 @@ button:focus:not(:focus-visible) {
   cursor: pointer;
 }
 
-.create-charge {
+.mypage-btns > .btn {
   all: unset;
   width: 21.1rem;
   height: 6.3rem;
@@ -836,6 +836,23 @@ button:focus:not(:focus-visible) {
   border-style: solid;
   cursor: pointer;
 }
+/*
+.create-charge {
+  all: unset;
+  width: 21.1rem;
+  height: 6.3rem;
+  border-radius: 85px;
+  font-family:'Pretendard-SemiBold';
+  font-size: 1.9rem;
+  background-color: #FFFFFF;
+  margin-left: 3.6rem;
+  margin-right: 3.6rem;
+  
+  border: 1px ;
+  border-color: #707070;
+  border-style: solid;
+  cursor: pointer;
+}*/
 
 .charac-container {
   width: 138rem;
@@ -859,6 +876,22 @@ button:focus:not(:focus-visible) {
 }
 
 .b-charac, .r-charac {
+  width: 26.5rem;
+  height: 5.7rem;
+  border-radius: 85px;
+  font-family: 'Pretendard-Medium';
+  font-size: 1.7rem;
+  color: #707070;
+  margin-left: 5.7rem;
+  cursor: pointer;
+
+  border-style: solid;
+  border-color: #707070;
+  border-width: 1px;
+  background-color: #FFFFFF;
+}
+
+.buttons > .btn {
   width: 26.5rem;
   height: 5.7rem;
   border-radius: 85px;
@@ -901,6 +934,27 @@ button:focus:not(:focus-visible) {
   margin-bottom: 3.8rem;
 }
 
+.registbox > .btn {
+  width: 23rem;
+  height: 5rem;
+  border: 1px #707070;
+  border-radius: 85px;
+  font-family: 'Pretendard-Medium';
+  background-color: #FFFFFF;
+  font-size: 1.4rem;
+  margin-bottom: 4.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3.8rem;
+
+  border-width: 1px;
+  border-color: #707070;
+  border-style: solid;
+
+  position: relative;
+  cursor: pointer;
+}
+
 .c-detailbox {
   position: absolute;
   bottom: 0px;
@@ -939,6 +993,8 @@ button:focus:not(:focus-visible) {
 .good{
   padding-right: 1.5rem;
 }
+
+
 
 .my-regist {
   width: 23rem;
@@ -1138,6 +1194,10 @@ button:focus:not(:focus-visible) {
   padding-bottom: 3rem;
 }
 
+.m-charge-main-detail > h6 {
+  padding-left: 2rem;
+}
+
 
 
 h5, .h5 {
@@ -1153,10 +1213,7 @@ h6, .h6 {
 }
 
 
-
-
-
-.m-charge-btn {
+.m-charge-footer > .close {
   width: 17.5rem;
   height: 6rem;
   color: #FFFFFF;
@@ -1170,6 +1227,22 @@ h6, .h6 {
   margin-bottom: 2.8rem;
   margin-top: 2.8rem;
 }
+
+/*
+.m-charge-btn {
+  width: 17.5rem;
+  height: 6rem;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 48px;
+  cursor: pointer;
+
+  text-align: center;
+  align-items: center;
+  background-color: #48C6C6;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+}*/
 
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -1246,6 +1319,13 @@ h6, .h6 {
   display: flex;
 }
 
+.m-regist-detail > h8 {
+  font-style: "Pretendard-SemiBold";
+  font-size: 1.9rem;
+  color: #FFFFFFB7;
+  float: left;
+}
+
 .btn-download {
   width: 22.1rem;
   height: 6rem;
@@ -1254,7 +1334,7 @@ h6, .h6 {
   font-style: "Pretendard-Medium";
   font-size: 1.4rem;
   color: #FFFFFF;
-  margin: 1.3rem 2rem 3.6rem 3.9rem;
+  margin: 1.3rem 2rem 3.6rem 3rem;
   box-shadow: 1px 1px 10px #00000029;
   background: #FF5E63 0% 0% no-repeat padding-box;
 }
@@ -1268,7 +1348,7 @@ h6, .h6 {
   font-style: "Pretendard-Medium";
   font-size: 1.4rem;
   color: #FFFFFF;
-  margin: 1.3rem 3.8rem 3.6rem 2rem;
+  margin: 1.3rem 3rem 3.6rem 2rem;
   box-shadow: 1px 1px 10px #00000029;
   background: #48C6C6 0% 0% no-repeat padding-box;
 }
@@ -1428,7 +1508,7 @@ h6, .h6 {
   margin-top: 3.5rem;
 }
 
-.m-tm-btn {
+.m-tm-footer > .close {
   border-radius: 48px;
   border: 0px;
   padding: 2.2rem 7.6rem;
@@ -1438,6 +1518,95 @@ h6, .h6 {
   box-shadow: 1px 1px 10px #00000029;
   background: #48C6C6 0% 0% no-repeat padding-box;
 }
+
+
+.m-tm-footer > .m-tm-btn {
+  border-radius: 48px;
+  border: 0px;
+  padding: 2.2rem 7.6rem;
+  font-style: "Pretendard-Medium";
+  color: #FFFFFF;
+  margin-bottom: 2.8rem;
+  box-shadow: 1px 1px 10px #00000029;
+  background: #48C6C6 0% 0% no-repeat padding-box;
+}
+
+
+
+/*testtesttest modaltest*/
+
+
+.modal {
+  
+  justify-content: center;
+  align-items: center;
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #d4d0d0; 
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 20px 20px 20px 20px;
+  padding: auto;
+  width: 45rem;
+   /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+
+/* 모달 창 css original */
+
+
+
+.modal_overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+/*
+.modal-content {
+  background-color: #d4d0d0; 
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 20px 20px 20px 20px;
+}
+*/
+
+
+/*
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+*/
 
 
 
