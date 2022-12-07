@@ -820,7 +820,11 @@ button:focus:not(:focus-visible) {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .mypage-btns > .btn {
+=======
+.profil-btn > .btn {
+>>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
   all: unset;
   width: 21.1rem;
   height: 6.3rem;
@@ -994,9 +998,13 @@ button:focus:not(:focus-visible) {
   padding-right: 1.5rem;
 }
 
+<<<<<<< HEAD
 
 
 .my-regist {
+=======
+.registbox > .btn {
+>>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
   width: 23rem;
   height: 5rem;
   border: 1px #707070;
@@ -1043,6 +1051,10 @@ button:focus:not(:focus-visible) {
   border-radius: 100px;
 }
 
+.game-icon > img {
+  cursor: pointer;
+}
+
 
 /*토너먼트--------------------------------------------------------------------------------------*/
 
@@ -1080,7 +1092,12 @@ button:focus:not(:focus-visible) {
   border-radius: 20px;
   margin: auto 3.5rem;
   cursor: pointer;
+  background: #00000080 0% 0% no-repeat padding-box;
+}
 
+.t-img > :hover {
+  background: #00000080 0% 0% no-repeat padding-box;
+  filter: brightness(75%);
 }
 
 .t-img > img {
@@ -1093,9 +1110,6 @@ button:focus:not(:focus-visible) {
 
 
 /*---------------------------------------------------------------------------------------------*/
-
-
-
 
 
 .modal-charge {
@@ -1111,17 +1125,10 @@ button:focus:not(:focus-visible) {
 
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   display: none;
-
-  
 }
-
-
-
 
 .m-charge-top {
   width: 45rem;
@@ -1189,6 +1196,10 @@ button:focus:not(:focus-visible) {
   padding-bottom: 2.5rem;
 }
 
+.m-charge-main-detail > img {
+  margin-right: 2rem;
+}
+
 .m-charge-detail > img {
   width: 5.5rem;
   padding-bottom: 3rem;
@@ -1213,6 +1224,12 @@ h6, .h6 {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
 .m-charge-footer > .close {
   width: 17.5rem;
   height: 6rem;
@@ -1509,6 +1526,7 @@ h6, .h6 {
 }
 
 .m-tm-footer > .close {
+<<<<<<< HEAD
   border-radius: 48px;
   border: 0px;
   padding: 2.2rem 7.6rem;
@@ -1521,6 +1539,8 @@ h6, .h6 {
 
 
 .m-tm-footer > .m-tm-btn {
+=======
+>>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
   border-radius: 48px;
   border: 0px;
   padding: 2.2rem 7.6rem;
