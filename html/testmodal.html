@@ -6,12 +6,210 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Modal test</title>
-        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../boot/css/bootstrap.css"/>
             
             
         
     </head>
     <body>
+      <div id="mypage-regist">
+        <header>
+            <nav class="navbar-logo">
+                <img src="../image/logo.png">
+            </nav>
+        </header>
+        
+        <div class="mypage-topbanner">
+            <img src="">  <!--상단 배너 이미지 추가-->
+        </div>
+
+        <section>
+            <div class="mypage-main">
+                <div class="profil-box">
+                    <div class="profil-image">
+                        <img src="../image/mypage_profile.png" style="width:35px ;height:35px">  <!--프로필 이미지 변경-->
+                    </div>
+                    <div class="mypage-btns">
+                        <button class="edit-profil" type="button" id="edit-profil">프로필 편집하기</button>
+                        <button class="btn" type="button" id="create-charge" >정산하기</button>
+
+                        <!--서비스 준비 중 모달창 내용-->
+                        <div class="modal hidden">
+                            <div class="modal-overlay"></div>
+                            <div class="modal-content">
+                                <div class="m-charge-header">
+                                    <img src="../image/error.png"> <!--삼각형 오류 로고-->
+                                    <h5>지금은 서비스 준비 중입니다</h5>
+                                </div>
+                                <div class="m-charge-main">    
+                                    <h5>정산은 월 말 일괄적으로 진행됩니다 <br>
+                                        문의사항은 하단을 통해 문의해 주시기 바랍니다</h5>
+                                    <hr width = "90%" color = "white" >
+                                    <div class="m-charge-main-detail">
+                                        <img src="../image/원.png">
+                                        <h6>02-1234-5678</h6>
+                                    </div>
+                                    <div class="m-charge-main-detail">
+                                        <img src="../image/원.png">
+                                        <h6>penidanzzak@gmail.com</h6>
+                                    </div>
+                                </div>
+                                <div class="m-charge-footer">
+                                    <button class="close" type="button" id="m-charge-btn">확인</button>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charac-container">
+                    <div class="buttons">
+                        <button class="b-charac" type="button" id="b_charac" onclick="location.href='mypage-bought.html'">내가 구매한 캐릭터</button>
+                        <button class="r-charac" type="button" id="r-charac"  style="color: #30AA90; border-color:#30AA90;">내가 등록한 캐릭터</button>
+                        
+                        
+
+                    </div>
+                    <div class="mycharac-area">
+                        <div class="registbox">
+                            <img src="../image/캐릭터추가.png" style="width:130px ;height:130px; margin-top: 70px; margin:auto;" >
+                            <button class="btn" type="button" id="my-regist">내 캐릭터 등록하기</button>
+
+                            <!-- 캐릭터 등록하기 모달 창 내용-->
+                            <div class="modal hidden">
+                                <div class="modal-overlay"></div>
+                                <div class="modal-content" style="width: 51.3rem ;">
+                                    <span class="close">&times;</span> 
+                                    <div class="m-regist-header">
+                                        <h5>캐릭터 등록하기</h5>
+                                    </div>
+                                    <div class="m-regist-main">
+                                        <h6>하단의 규격에 맞춰 캐릭터 파일을 업로드하면<br>
+                                            캐릭터 등록이 완료됩니다.
+                                        </h6>
+                                        <div class="m-regist-upload">
+                                            <img src="../image/업로드.png" style="width:12rem; height:12rem;">
+                                            <div class="m-regist-upload-txt">파일 등록하기</div>
+                                            
+                                        </div>
+                                        <div class="m-regist-detail">
+                                            <h8>캐릭터 이름</h8>
+                                            <hr>
+                                            <h8>캐릭터에 대해 설명해 주세요</h8>
+                                        </div>
+                                        <div class="m-regist-btn">
+                                            <button class="btn-download" id="btn-download">캐릭터 파일 양식 다운로드</button>
+                                            <button class="btn-regist" id="btn-regist">캐릭터 등록하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="registbox">
+                            <img src="" style="width:290px; height:290px; border-radius:20px 20px 0 0;"> <!--마이페이지 캐릭터 이미지 등록!!-->
+                            <div class="c-detailbox">
+                                <div class="charac-name" id="charac-name">제목</div>
+                                <div class="charac-detail">
+                                    <div class="hits"><img src="../image/노출수.png" style="width: 19px; height: 19px "> 000</div>
+                                    <div class="good"><img src="../image/선택수.png" style="width:16px; height:16px"> 000</div>
+                                    <div class="money"><img src="../image/달러.png" style="width:21px ; height:21px"> 000,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="registbox">
+                            <img src="" style="width:290px; height:290px; border-radius:20px 20px 0 0;"> <!--마이페이지 캐릭터 이미지 등록!!-->
+                            <div class="c-detailbox">
+                                <div class="charac-name" id="charac-name">제목</div>
+                                <div class="charac-detail">
+                                    <div class="hits"><img src="../image/노출수.png" style="width: 19px; height: 19px "> 000</div>
+                                    <div class="good"><img src="../image/선택수.png" style="width:16px; height:16px"> 000</div>
+                                    <div class="money"><img src="../image/달러.png" style="width:21px ; height:21px"> 000,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="registbox">
+                            <img src="" style="width:290px; height:290px; border-radius:20px 20px 0 0;"> <!--마이페이지 캐릭터 이미지 등록!!-->
+                            <div class="c-detailbox">
+                                <div class="charac-name" id="charac-name">제목</div>
+                                <div class="charac-detail">
+                                    <div class="hits"><img src="../image/노출수.png" style="width: 19px; height: 19px "> 000</div>
+                                    <div class="good"><img src="../image/선택수.png" style="width:16px; height:16px"> 000</div>
+                                    <div class="money"><img src="../image/달러.png" style="width:21px ; height:21px"> 000,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="registbox">
+                            <img src="" style="width:290px; height:290px; border-radius:20px 20px 0 0;"> <!--마이페이지 캐릭터 이미지 등록!!-->
+                            <div class="c-detailbox">
+                                <div class="charac-name" id="charac-name">제목</div>
+                                <div class="charac-detail">
+                                    <div class="hits"><img src="../image/노출수.png" style="width: 19px; height: 19px "> 000</div>
+                                    <div class="good"><img src="../image/선택수.png" style="width:16px; height:16px"> 000</div>
+                                    <div class="money"><img src="../image/달러.png" style="width:21px ; height:21px"> 000,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="registbox">
+                            <img src="" style="width:290px; height:290px; border-radius:20px 20px 0 0;"> <!--마이페이지 캐릭터 이미지 등록!!-->
+                            <div class="c-detailbox">
+                                <div class="charac-name" id="charac-name">제목</div>
+                                <div class="charac-detail">
+                                    <div class="hits"><img src="../image/노출수.png" style="width: 19px; height: 19px "> 000</div>
+                                    <div class="good"><img src="../image/선택수.png" style="width:16px; height:16px"> 000</div>
+                                    <div class="money"><img src="../image/달러.png" style="width:21px ; height:21px"> 000,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="registbox">
+                            <img src="" style="width:290px; height:290px; border-radius:20px 20px 0 0;"> <!--마이페이지 캐릭터 이미지 등록!!-->
+                            <div class="c-detailbox">
+                                <div class="charac-name" id="charac-name">제목</div>
+                                <div class="charac-detail">
+                                    <div class="hits"><img src="../image/노출수.png" style="width: 19px; height: 19px "> 000</div>
+                                    <div class="good"><img src="../image/선택수.png" style="width:16px; height:16px"> 000</div>
+                                    <div class="money"><img src="../image/달러.png" style="width:21px ; height:21px"> 000,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="registbox">
+                            <img src="" style="width:290px; height:290px; border-radius:20px 20px 0 0;"> <!--마이페이지 캐릭터 이미지 등록!!-->
+                            <div class="c-detailbox">
+                                <div class="charac-name" id="charac-name">제목</div>
+                                <div class="charac-detail">
+                                    <div class="hits"><img src="../image/노출수.png" style="width: 19px; height: 19px "> 000</div>
+                                    <div class="good"><img src="../image/선택수.png" style="width:16px; height:16px"> 000</div>
+                                    <div class="money"><img src="../image/달러.png" style="width:21px ; height:21px"> 000,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                </div> 
+                
+            </div>
+            
+
+
+        </section>
+    </div>
+    <script src="../js/modal.js">
+        /*modal.js */
+        </script>
+
+
+      
 
       <!--첫번째 Modal 오픈-->
       <h1 class="btn">MODAL_1</h1>

@@ -820,11 +820,7 @@ button:focus:not(:focus-visible) {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .mypage-btns > .btn {
-=======
-.profil-btn > .btn {
->>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
   all: unset;
   width: 21.1rem;
   height: 6.3rem;
@@ -998,13 +994,7 @@ button:focus:not(:focus-visible) {
   padding-right: 1.5rem;
 }
 
-<<<<<<< HEAD
-
-
-.my-regist {
-=======
 .registbox > .btn {
->>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
   width: 23rem;
   height: 5rem;
   border: 1px #707070;
@@ -1224,12 +1214,7 @@ h6, .h6 {
 }
 
 
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
 .m-charge-footer > .close {
   width: 17.5rem;
   height: 6rem;
@@ -1526,7 +1511,7 @@ h6, .h6 {
 }
 
 .m-tm-footer > .close {
-<<<<<<< HEAD
+
   border-radius: 48px;
   border: 0px;
   padding: 2.2rem 7.6rem;
@@ -1535,12 +1520,13 @@ h6, .h6 {
   margin-bottom: 2.8rem;
   box-shadow: 1px 1px 10px #00000029;
   background: #48C6C6 0% 0% no-repeat padding-box;
+  cursor: pointer;
 }
 
-
+/*
 .m-tm-footer > .m-tm-btn {
-=======
->>>>>>> e41d7fbb8eea249e4d526f10b5de9ab50ff69740
+
+
   border-radius: 48px;
   border: 0px;
   padding: 2.2rem 7.6rem;
@@ -1549,9 +1535,10 @@ h6, .h6 {
   margin-bottom: 2.8rem;
   box-shadow: 1px 1px 10px #00000029;
   background: #48C6C6 0% 0% no-repeat padding-box;
+  cursor: pointer;
 }
 
-
+*/
 
 /*testtesttest modaltest*/
 
